@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ranyar.castlefightgraphic1.controllers.SecondaryController">
+   <children>
+      <ImageView fitHeight="407.0" fitWidth="608.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/background.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="260.0" prefHeight="23.0" prefWidth="141.0" text="Personnage 1" textFill="WHITE">
+         <font>
+            <Font name="Corbel Light Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="454.0" layoutY="259.0" prefHeight="23.0" prefWidth="141.0" text="Personnage 2" textFill="WHITE">
+         <font>
+            <Font name="Corbel Light Italic" size="15.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="224.0" layoutY="354.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="158.0" style="-fx-background-color: 0;" text="FIGHT !" textFill="WHITE">
+         <font>
+            <Font name="Corbel Light Italic" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </Button>
+      <Button fx:id="fight" alignment="CENTER" contentDisplay="CENTER" layoutX="224.0" layoutY="354.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="158.0" style="-fx-background-color: 0;" text="FIGHT !" textFill="WHITE">
+         <font>
+            <Font name="Corbel Light Italic" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="196.0" layoutY="13.0" prefHeight="22.0" prefWidth="218.0" text="Choississez vos personnages" textFill="WHITE">
+         <font>
+            <Font name="Corbel Light Italic" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00796b80" height="141.0" layoutX="12.0" layoutY="201.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="141.0" />
+      <ImageView fx:id="perso1" fitHeight="137.0" fitWidth="137.0" layoutX="14.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#80000080" height="141.0" layoutX="454.0" layoutY="201.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="141.0" />
+      <ImageView fx:id="perso2" fitHeight="137.0" fitWidth="137.0" layoutX="456.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="Elf" fitHeight="137.0" fitWidth="137.0" layoutX="163.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/elf3.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="196.0" layoutY="13.0" opacity="0.6" prefHeight="22.0" prefWidth="218.0" text="Choississez vos personnages" textFill="WHITE">
+         <font>
+            <Font name="Corbel Light Italic" size="20.0" />
+         </font>
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </Label>
+      <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="503.0" layoutY="5.0" mnemonicParsing="false" opacity="0.6" prefHeight="38.0" prefWidth="89.0" style="-fx-background-color: 0;" text="Quitter" textFill="WHITE">
+         <font>
+            <Font name="Corbel Light Italic" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </Button>
+      <Button fx:id="quit" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="503.0" layoutY="5.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="89.0" style="-fx-background-color: 0;" text="Quitter" textFill="WHITE">
+         <font>
+            <Font name="Corbel Light Italic" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="-6.0" layoutY="-12.0" mnemonicParsing="false" opacity="0.6" prefHeight="75.0" prefWidth="54.0" style="-fx-background-color: 0;" text="⇦" textFill="WHITE">
+         <font>
+            <Font name="Corbel Light Italic" size="40.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </Button>
+      <Button fx:id="back" layoutX="-6.0" layoutY="-12.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="54.0" style="-fx-background-color: 0;" text="⇦" textFill="WHITE">
+         <font>
+            <Font name="Corbel Light Italic" size="40.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="Knight" fitHeight="137.0" fitWidth="137.0" layoutX="14.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/knight.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Dwarf" fitHeight="137.0" fitWidth="137.0" layoutX="456.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/dwarf.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Witch" fitHeight="137.0" fitWidth="137.0" layoutX="309.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/witch.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="logCombat" layoutX="160.0" layoutY="200.0" prefHeight="141.0" prefWidth="286.0" />
+   </children>
+</AnchorPane>

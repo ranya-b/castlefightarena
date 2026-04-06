@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../css/style.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ranyar.castlefightgraphic1.controllers.PrimaryController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="212.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/knight2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="400.0" fitWidth="212.0" layoutX="151.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/elf2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="400.0" fitWidth="212.0" layoutX="303.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/witch2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="400.0" fitWidth="212.0" layoutX="455.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/dwarf2.png" />
+         </image>
+      </ImageView>
+      <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="158.0" opacity="0.9" prefHeight="73.0" prefWidth="600.0" stylesheets="@../../../css/style.css" text="CASTLE FIGHT" textFill="WHITE">
+         <font>
+            <Font name="Corbel Light Italic" size="74.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutY="158.0" prefHeight="54.0" prefWidth="600.0" stylesheets="@../../../css/style.css" text="CASTLE FIGHT" textFill="WHITE">
+         <font>
+            <Font name="Corbel Light Italic" size="74.0" />
+         </font>
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </Label>
+      <Button layoutX="255.0" layoutY="265.0" mnemonicParsing="false" onAction="#entrer" style="-fx-background-color: 0;" text="JOUER" textFill="WHITE">
+         <font>
+            <Font name="Corbel Light Italic" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </Button>
+      <Button fx:id="btnJouer" layoutX="255.0" layoutY="265.0" mnemonicParsing="false" onAction="#entrer" style="-fx-background-color: 0;" text="JOUER" textFill="WHITE">
+         <font>
+            <Font name="Corbel Light Italic" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
