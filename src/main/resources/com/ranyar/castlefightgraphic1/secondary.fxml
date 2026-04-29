@@ -123,5 +123,13 @@
          </image>
       </ImageView>
       <TextArea fx:id="logCombat" layoutX="160.0" layoutY="200.0" prefHeight="141.0" prefWidth="286.0" />
+      <Button fx:id="btnHistorique" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="436.0" layoutY="365.0" mnemonicParsing="false" onAction="#ouvrirHistorique" prefHeight="38.0" prefWidth="168.0" style="-fx-background-color: 0;" text="Voir l'historique des scores" textAlignment="JUSTIFY" textFill="WHITE">
+         <font>
+            <Font name="Corbel Light Italic" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
    </children>
 </AnchorPane>

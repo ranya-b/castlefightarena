@@ -44,7 +44,7 @@
             <GaussianBlur />
          </effect>
       </Label>
-      <Button layoutX="255.0" layoutY="265.0" mnemonicParsing="false" onAction="#entrer" style="-fx-background-color: 0;" text="JOUER" textFill="WHITE">
+      <Button layoutX="180.0" layoutY="265.0" mnemonicParsing="false" onAction="#entrer" style="-fx-background-color: 0;" text="JOUER" textFill="WHITE">
          <font>
             <Font name="Corbel Light Italic" size="22.0" />
          </font>
@@ -55,7 +55,26 @@
             <GaussianBlur />
          </effect>
       </Button>
-      <Button fx:id="btnJouer" layoutX="255.0" layoutY="265.0" mnemonicParsing="false" onAction="#entrer" style="-fx-background-color: 0;" text="JOUER" textFill="WHITE">
+      <Button fx:id="btnJouer" layoutX="181.0" layoutY="265.0" mnemonicParsing="false" onAction="#entrer" style="-fx-background-color: 0;" text="JOUER" textFill="WHITE">
+         <font>
+            <Font name="Corbel Light Italic" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="336.0" layoutY="265.0" mnemonicParsing="false" style="-fx-background-color: 0;" text="SCORES" textFill="WHITE">
+         <font>
+            <Font name="Corbel Light Italic" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </Button>
+      <Button fx:id="btnHistorique" layoutX="336.0" layoutY="265.0" mnemonicParsing="false" onAction="#ouvrirHistorique" style="-fx-background-color: 0;" text="SCORES" textFill="WHITE">
          <font>
             <Font name="Corbel Light Italic" size="22.0" />
          </font>

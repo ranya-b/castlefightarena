@@ -1,6 +1,8 @@
 package com.ranyar.castlefightgraphic1.controllers;
 
 import com.ranyar.castlefightgraphic1.App;
+import com.ranyar.castlefightgraphic1.Databasemanager;
+
 import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -61,6 +63,9 @@ public class SecondaryController {
     private Timeline timelineCombat;
 
     @FXML
+    private Button btnHistorique;
+
+    @FXML
     public void initialize() {
         Knight.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> handleCharacterClick(Knight));
         Elf.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> handleCharacterClick(Elf));
@@ -73,6 +78,18 @@ public class SecondaryController {
         
         logCombat.setEditable(false);
         logCombat.setWrapText(true);
+
+        btnHistorique.setOnAction(e -> {
+            try {
+                Parent root = FXMLLoader.load(getClass().getResource(
+                    "/com/ranyar/castlefightgraphic1/history.fxml"));
+                Stage stage = (Stage) btnHistorique.getScene().getWindow();
+                stage.setScene(new Scene(root));
+                stage.show();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        });
     }
 
     private void handleCharacterClick(ImageView imgView) {
@@ -107,6 +124,14 @@ public class SecondaryController {
     }
 
     @FXML
+    private void ouvrirHistorique(ActionEvent e) throws IOException {
+            Parent root = FXMLLoader.load(getClass().getResource("/com/ranyar/castlefightgraphic1/history.fxml"));
+            Stage stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
+    }
+
+    @FXML
     private void handleFight() {
         // Vérifier que les deux personnages sont sélectionnés
         if (perso1.getImage() == null || perso2.getImage() == null) {
@@ -128,6 +153,21 @@ public class SecondaryController {
 
         // Lancer le combat (utilise la méthode combattre de Personnage)
         p1.combattre(p2);
+        // Après p1.combattre(p2) :
+        String nomGagnant, nomPerdant;
+        int vieRestante;
+
+        if (p1.getVie() > 0) {
+            nomGagnant = p1.getNom();
+            nomPerdant = p2.getNom();
+            vieRestante = p1.getVie();
+        } else {
+            nomGagnant = p2.getNom();
+            nomPerdant = p1.getNom();
+            vieRestante = p2.getVie();
+        }
+
+        Databasemanager.sauvegarderCombat(nomGagnant, nomPerdant, vieRestante);
 
         // Récupérer le texte capturé
         System.out.flush();
