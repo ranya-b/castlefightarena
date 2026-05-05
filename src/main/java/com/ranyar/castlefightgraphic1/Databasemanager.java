@@ -1,20 +1,37 @@
 package com.ranyar.castlefightgraphic1;
 
 import java.sql.*;
+import java.nio.file.*;
 
 public class Databasemanager {
 
-    private static final String URL = "jdbc:mysql://localhost:3306/castlefight";
-    private static final String USER = "root";
-    private static final String PASSWORD = ""; // ton mdp XAMPP
-
+    private static final String DB_PATH = "castlefight.db";
+    private static final String URL = "jdbc:sqlite:" + DB_PATH;
     private static Connection connection;
 
     public static Connection getConnection() throws SQLException {
         if (connection == null || connection.isClosed()) {
-            connection = DriverManager.getConnection(URL, USER, PASSWORD);
+            connection = DriverManager.getConnection(URL);
+            initialiserBDD();
         }
         return connection;
+    }
+
+    private static void initialiserBDD() {
+        String sql = """
+            CREATE TABLE IF NOT EXISTS resultats_combats (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                nom_gagnant TEXT NOT NULL,
+                nom_perdant TEXT NOT NULL,
+                vie_restante_gagnant INTEGER NOT NULL,
+                date_combat TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            )
+        """;
+        try (Statement stmt = connection.createStatement()) {
+            stmt.execute(sql);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void sauvegarderCombat(String nomGagnant, String nomPerdant, int vieRestante) {
