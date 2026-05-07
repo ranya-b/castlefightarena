@@ -9,7 +9,7 @@ l'historique des combats précédents.
 - Aucune installation de Java requise (inclus dans l'installateur)
 
 ## Installation (fichier .msi)
-1. Télécharger le fichier `CastleFightArena.msi` depuis la section [Releases](../../releases) du dépôt
+1. Télécharger le fichier `CastleFightArena.msi` depuis la section [Files](../../files) du dépôt
 2. Double-cliquer sur le fichier `.msi` pour lancer l'installateur
 3. Suivre les étapes de l'assistant d'installation
 4. Une fois l'installation terminée, lancer l'application depuis le raccourci créé sur le bureau ou dans le menu Démarrer
