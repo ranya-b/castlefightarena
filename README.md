@@ -38,31 +38,31 @@ La base de données est hébergée sur O2Switch et est déjà configurée. Aucun
 ## Guide d'utilisation
 
 1. Lancer l'application
-Double-cliquer sur le raccourci "CastleFightArena" créé sur le bureau ou dans le menu Démarrer.
+<br>Double-cliquer sur le raccourci "CastleFightArena" créé sur le bureau ou dans le menu Démarrer.
 
 ![Icone](docs/screens/1.png)
 
 
 2. Accéder à l'arène
-Cliquer sur le bouton "Jouer" pour accéder à l'écran de sélection des personnages.
+<br>Cliquer sur le bouton "Jouer" pour accéder à l'écran de sélection des personnages.
 
 ![Écran d'accueil](docs/screens/2.png)
 
 
 3. Choisir les combattants
-Cliquer sur un personnage pour le placer dans le slot 1, puis cliquer sur un second personnage pour le slot 2.
+<br>Cliquer sur un personnage pour le placer dans le slot 1, puis cliquer sur un second personnage pour le slot 2.
 
-Les quatre classes disponibles sont : Guerrier, Elfe, Sorcière, Nain.
+<br>Les quatre classes disponibles sont : Guerrier, Elfe, Sorcière, Nain.
 
 
 4. Lancer le combat
-Cliquer sur le bouton "Fight !". Le déroulé du combat s'affiche progressivement dans le journal de combat.
+<br>Cliquer sur le bouton "Fight !". Le déroulé du combat s'affiche progressivement dans le journal de combat.
 
 ![Combat en cours](docs/screens/3.png)
 
 
 5. Consulter l'historique
-Cliquer sur le bouton "Voir l'historique des scores" pour accéder à la liste des combats précédents avec le gagnant, le perdant et les points de vie restants.
+<br>Cliquer sur le bouton "Voir l'historique des scores" pour accéder à la liste des combats précédents avec le gagnant, le perdant et les points de vie restants.
 
 ![Historique des scores](docs/screens/4.png)
 
