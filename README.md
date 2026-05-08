@@ -64,7 +64,7 @@ Cliquer sur le bouton "Fight !". Le déroulé du combat s'affiche progressivemen
 5. Consulter l'historique
 Cliquer sur le bouton "Voir l'historique des scores" pour accéder à la liste des combats précédents avec le gagnant, le perdant et les points de vie restants.
 
-![Historique des scores](docs/screen/4.png)
+![Historique des scores](docs/screens/4.png)
 
 
 ## Diagramme de classes
