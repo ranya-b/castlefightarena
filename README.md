@@ -51,7 +51,6 @@ La base de données est hébergée sur O2Switch et est déjà configurée. Aucun
 
 3. Choisir les combattants
 <br>Cliquer sur un personnage pour le placer dans le slot 1, puis cliquer sur un second personnage pour le slot 2.
-
 <br>Les quatre classes disponibles sont : Guerrier, Elfe, Sorcière, Nain.
 
 
