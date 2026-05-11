@@ -69,3 +69,7 @@ La base de données est hébergée sur O2Switch et est déjà configurée. Aucun
 ## Diagramme de classes
 
 ![Diagramme de classes](docs/screens/5.png)
+
+## MCD
+
+![MCD](docs/screens/6.png)
